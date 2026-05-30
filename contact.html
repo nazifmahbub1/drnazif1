@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Dr. Nazif Mahbub</title>
+<meta name="description" content="Get in touch with Dr. Nazif Mahbub. Send a message about coaching, corporate training, MPH admissions, or podcast production — delivered straight to his inbox.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231C2B24'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='46' fill='%23F6F1E7' text-anchor='middle'%3ENM%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand" aria-label="Dr. Nazif Mahbub — home">
+      <span class="mark">NM</span>
+      <span>Dr. Nazif Mahbub<small>Coach · Advocate · Host</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn-accent nav-cta">Work with me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="about-hero">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <span class="kicker">Contact</span>
+        <h2 class="display">Let's start a conversation</h2>
+        <p>Have a question about coaching, training, MPH admissions, or your podcast? Send a message and Dr. Nazif will get back to you. Every message goes straight to his inbox.</p>
+        <div class="contact-cards">
+          <a href="mailto:dr.nazif.mahbub@gmail.com">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <span><b>Email</b><span>dr.nazif.mahbub@gmail.com</span></span>
+          </a>
+          <a href="https://activeactionlab.com" target="_blank" rel="noopener">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></span>
+            <span><b>Active Action Lab</b><span>activeactionlab.com</span></span>
+          </a>
+          <div>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><b>Based in</b><span>Alberta, Canada</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card" data-reveal data-reveal-delay="1">
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">What's this about?</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic…</option>
+              <option>Personal Development Coaching</option>
+              <option>Job Readiness Program</option>
+              <option>Corporate Training Workshops</option>
+              <option>MPH Admission Coaching</option>
+              <option>Podcast Production (Pod Mechanic)</option>
+              <option>Podcast guest enquiry</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you're working on…" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New enquiry from portfolio site">
+          <button type="submit" class="btn btn-primary">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <p class="form-note">Your message is sent securely to dr.nazif.mahbub@gmail.com.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="brand"><span class="mark">NM</span><span>Dr. Nazif Mahbub</span></a>
+        <p>Physician by training, policy analyst by profession, and a personal-development advocate helping people build the clarity, confidence, and skills to transform their lives.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="service-personal-development.html">Personal Development Coaching</a><a href="service-job-readiness.html">Job Readiness Program</a><a href="service-corporate-training.html">Corporate Training Workshops</a><a href="service-mph-admission.html">MPH Admission Coaching</a><a href="service-podcast-production.html">Podcast Production</a>
+      </div>
+      <div class="footer-col">
+        <h5>Elsewhere</h5>
+        <a href="https://activeactionlab.com" target="_blank" rel="noopener">Active Action Lab <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://activeactionlab.com/podcast" target="_blank" rel="noopener">Active Action Podcast <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://podmechanic.com" target="_blank" rel="noopener">Pod Mechanic <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="mailto:dr.nazif.mahbub@gmail.com">dr.nazif.mahbub@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Dr. Nazif Mahbub. All rights reserved.</span>
+      <span>Built with care · <a href="contact.html">Get in touch</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
