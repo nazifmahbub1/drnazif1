@@ -572,3 +572,84 @@ section { padding: 96px 0; position: relative; }
 
 /* FormRobin embed wrapper */
 .formrobin-wrap { min-height: 400px; }
+
+/* ================= v8 additions ================= */
+
+/* "What I'll do to help you" list */
+.help-list {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px;
+  margin: 8px 0 30px;
+}
+.help-list li {
+  position: relative; padding: 4px 0 4px 34px; font-size: 1rem; color: var(--ink-soft); line-height: 1.55;
+}
+.help-list li strong { color: var(--ink); }
+.help-list li::before {
+  content: ""; position: absolute; left: 0; top: 6px; width: 22px; height: 22px;
+  border-radius: 50%; background: var(--paper-2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23BE6A38' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 14px; background-repeat: no-repeat; background-position: center;
+}
+.help-close { font-size: 1.06rem; max-width: 60em; }
+.help-close strong { color: var(--ink); }
+
+/* Masterclass feature (home) */
+.mc-feature {
+  display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
+  background: linear-gradient(145deg, var(--ink), #243a30);
+  color: var(--paper); border-radius: 28px; padding: 48px 50px;
+  position: relative; overflow: hidden;
+}
+.mc-feature::before {
+  content: ""; position: absolute; right: -60px; bottom: -80px; width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(190,106,56,.28), transparent 65%);
+}
+.mc-feature-body { position: relative; z-index: 1; max-width: 46em; }
+.mc-feature h2 { color: var(--paper); font-size: clamp(1.8rem,3.6vw,2.7rem); margin: 12px 0 12px; }
+.mc-feature p { color: rgba(246,241,231,.82); margin-bottom: 18px; }
+.mc-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.mc-meta span {
+  font-size: .82rem; font-weight: 600; padding: .4rem .85rem; border-radius: 100px;
+  background: rgba(246,241,231,.1); border: 1px solid rgba(246,241,231,.2); color: var(--paper);
+}
+.mc-price {
+  position: relative; z-index: 1; text-align: center; flex: none;
+  background: var(--card); color: var(--ink); border-radius: 20px; padding: 24px 34px;
+  box-shadow: var(--shadow-md);
+}
+.mc-price span { display: block; font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-deep); }
+.mc-price b { display: block; font-family: var(--font-display); font-size: 3rem; line-height: 1.1; margin: 4px 0; }
+.mc-price small { display: block; font-size: .82rem; color: var(--ink-mute); text-decoration: line-through; }
+
+/* masterclass aside "who it's for" list */
+.aside-list { margin: 4px 0 18px; display: grid; gap: 9px; }
+.aside-list li { position: relative; padding-left: 22px; font-size: .92rem; color: var(--ink-soft); line-height: 1.5; }
+.aside-list li::before { content: ""; position: absolute; left: 0; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+/* nav: collapse to menu earlier now there are 7 links */
+@media (max-width: 1080px) and (min-width: 921px) {
+  .nav-links a { padding: .5rem .58rem; font-size: .86rem; }
+  .nav-cta { margin-left: 6px; }
+}
+
+@media (max-width: 920px) {
+  .nav-links {
+    position: fixed; inset: 74px 0 auto 0; flex-direction: column; align-items: stretch;
+    background: var(--paper); padding: 14px 20px 24px; gap: 2px;
+    border-bottom: 1px solid var(--line); box-shadow: var(--shadow-md);
+    transform: translateY(-130%); transition: transform .4s var(--ease); z-index: 99;
+  }
+  .nav-links.open { transform: none; }
+  .nav-links a { padding: .85rem .6rem; font-size: 1rem; }
+  .nav-links a::after { display: none; }
+  .nav-cta { margin: 8px 0 0; }
+  .nav-toggle { display: block; }
+}
+
+@media (max-width: 860px) {
+  .mc-feature { grid-template-columns: 1fr; gap: 26px; padding: 38px 32px; text-align: left; }
+  .mc-price { justify-self: start; }
+}
+@media (max-width: 620px) {
+  .help-list { grid-template-columns: 1fr; }
+}
