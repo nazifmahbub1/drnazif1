@@ -569,3 +569,6 @@ section { padding: 96px 0; position: relative; }
 .invite-band > div:first-child { max-width: 40em; }
 .invite-band-actions { display: flex; flex-direction: column; gap: 12px; flex: none; }
 @media (max-width: 760px) { .invite-band-actions { width: 100%; } }
+
+/* FormRobin embed wrapper */
+.formrobin-wrap { min-height: 400px; }
