@@ -653,3 +653,18 @@ section { padding: 96px 0; position: relative; }
 @media (max-width: 620px) {
   .help-list { grid-template-columns: 1fr; }
 }
+
+/* ================= v9 additions ================= */
+
+/* distinct background for the "What I'll do to help you" section */
+.help-section { background: #E9EEE6; }
+
+/* single-line section headings (wrap only on small screens) */
+.section-head h2.head-1line { font-size: clamp(1.7rem, 3.3vw, 2.45rem); }
+@media (min-width: 780px) {
+  .section-head h2.head-1line { white-space: nowrap; }
+}
+
+/* curriculum cards sit on a dark band: force readable dark text */
+.ep-card p { color: var(--ink-soft); }
+.ep-card .ep-num { color: var(--accent-deep); }
