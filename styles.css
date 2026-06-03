@@ -767,3 +767,8 @@ section { padding: 96px 0; position: relative; }
 }
 .footer-kit:hover { border-color: #E7B98C; color: #E7B98C; }
 .footer-kit svg { width: 15px; height: 15px; }
+
+/* quick-facts / meta: keep labels on one line, right-align values consistently */
+.svc-aside .meta div { align-items: flex-start; gap: 18px; }
+.svc-aside .meta div span:first-child { white-space: nowrap; flex: none; }
+.svc-aside .meta div span:last-child { text-align: right; }
