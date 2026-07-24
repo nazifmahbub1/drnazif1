@@ -776,3 +776,18 @@ section { padding: 96px 0; position: relative; }
 /* emblem images (service/course/podcast/invite hero) with green-icon fallback */
 .svc-emblem .emblem-ph { position: absolute; inset: 0; display: grid; place-items: center; z-index: 0; }
 .svc-emblem img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; z-index: 1; }
+
+/* ================= health services ================= */
+.health-section { background: var(--paper-2); }
+
+/* note / disclaimer box on service pages */
+.svc-note {
+  margin-top: 30px; background: var(--card);
+  border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: 14px; padding: 20px 24px;
+}
+.svc-note h4 { font-size: 1.02rem; margin-bottom: 6px; color: var(--ink); }
+.svc-note p { font-size: .94rem; color: var(--ink-soft); margin: 0; line-height: 1.65; }
+
+/* step cards sit on a dark band - keep text readable */
+.ep-card h3 { color: var(--ink); }
